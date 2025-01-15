@@ -2,7 +2,7 @@ Booking Data Ingestion System
 
 Overview
 
-This is a Booking Management API that allows for creating, retrieving, and deleting booking records. The application uses Node.js with Express for the backend and Sequelize with PostgreSQL for the database.
+This is a Booking Data Ingestion System that allows for creating, retrieving, and deleting booking records. The application uses Node.js with Express for the backend and Sequelize with PostgreSQL for the database.
 
 Features
   . Create bookings

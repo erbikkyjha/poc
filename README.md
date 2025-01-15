@@ -5,59 +5,44 @@ Overview
 This is a Booking Management API that allows for creating, retrieving, and deleting booking records. The application uses Node.js with Express for the backend and Sequelize with PostgreSQL for the database.
 
 Features
-
-Create bookings
-
-Retrieve all bookings
-
-Retrieve a specific booking by ID
-
-Filter bookings by date or vendor
-
-Delete bookings
+  . Create bookings
+  . Retrieve all bookings
+  . Retrieve a specific booking by ID
+  . Filter bookings by date or vendor
+  .Delete bookings
 
 Prerequisites
-
 Ensure the following are installed on your machine:
-
-Node.js (v14 or later)
-
-PostgreSQL (v12 or later)
-
-npm (comes with Node.js)
+       . Node.js (v14 or later)
+       .PostgreSQL (v12 or later)
+       .npm (comes with Node.js)
 
 Setup Instructions
 
 1. Clone the Repository
-
-git clone <repository_url>
-cd <repository_folder>
+    git clone <repository_url>
+    cd <repository_folder>
 
 2. Install Dependencies
-
-npm install
+   npm install
 
 3. Configure Environment Variables
+    Create a .env file in the root directory and add the following configurations:
 
-Create a .env file in the root directory and add the following configurations:
-
-DB_USERNAME=postgres
-DB_PASSWORD=buzzwork1
-DB_NAME=postgres
-DB_HOST=localhost
-DB_PORT=5432
-DB_DIALECT=postgres
-DB_LOGGING=false
+   DB_USERNAME=postgres
+   DB_PASSWORD=buzzwork1
+   DB_NAME=postgres
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_DIALECT=postgres
+   DB_LOGGING=false
 
 4. Start the PostgreSQL Database
-
-Ensure that PostgreSQL is running on your machine and the credentials match those specified in the .env file.
+   Ensure that PostgreSQL is running on your machine and the credentials match those specified in the .env file.
 
 5. Sync Database and Start the Server
-
-The application will automatically sync the database when started. Run:
-
-node app.js
+    The application will automatically sync the database when started. Run:
+    node app.js
 
 6. Verify API Endpoints
 

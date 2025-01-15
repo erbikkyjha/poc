@@ -57,10 +57,10 @@ POST /bookings
 Request Body:
 
 {
-  "customer_name": "John Doe",
+  "customer_name": "bikky",
   "booking_date": "2025-01-01",
   "amount": 200,
-  "vendor_details": { "vendor_name": "Vendor A", "vendor_contact": "1234567890" }
+  "vendor_details": { "vendor_name": "Vendor A", "vendor_email": "abc@gmail.com" }
 }
 
 Response:
@@ -86,10 +86,10 @@ Response:
 [
   {
     "booking_id": 1,
-    "customer_name": "John Doe",
+    "customer_name": "bikky",
     "booking_date": "2025-01-01T00:00:00.000Z",
     "amount": 200,
-    "vendor_details": { "vendor_name": "Vendor A", "vendor_contact": "1234567890" }
+    "vendor_details": { "vendor_name": "Vendor A", "vendor_email": "abc@gmail.com" }
   }
 ]
 
@@ -101,10 +101,10 @@ Response (Success):
 
 {
   "booking_id": 1,
-  "customer_name": "John Doe",
+  "customer_name": "bikky",
   "booking_date": "2025-01-01T00:00:00.000Z",
   "amount": 200,
-  "vendor_details": { "vendor_name": "Vendor A", "vendor_contact": "1234567890" }
+  "vendor_details": { "vendor_name": "Vendor A", "vendor_email": "abc@gmail.com" }
 }
 
 Response (Not Found):
@@ -132,45 +132,6 @@ Response (Not Found):
   "message": "Booking not found."
 }
 
-Database Design
-
-Table: Bookings
-
-Column
-
-Type
-
-Constraints
-
-booking_id
-
-INTEGER
-
-PRIMARY KEY, AUTOINCREMENT
-
-customer_name
-
-STRING
-
-NOT NULL
-
-booking_date
-
-DATE
-
-NOT NULL
-
-amount
-
-DECIMAL
-
-NOT NULL
-
-vendor_details
-
-JSONB
-
-NOT NULL
 
 Sequence Diagram
 
